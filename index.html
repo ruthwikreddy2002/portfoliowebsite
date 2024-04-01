@@ -12,7 +12,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <link id='favicon' rel="shortcut icon" href="hand-holding-magnifying-glass-transparent-background-vector-hand-holding-magnifying-glass-search-analysis-concept-hand-119409242.webp" type="image/x-png">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -21,10 +21,7 @@
 </head>
 <body oncontextmenu="return false">
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
+
 
 <!-- navbar starts -->
 <header>
@@ -58,11 +55,11 @@
     </a>
     <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/ruthwikreddylakkireddy/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/ruthwikreddy7" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></li>
           
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/ruthwik_reddy00/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-          <li><a class="dev" aria-label="Dev" href="https://auth.geeksforgeeks.org/user/ruthwikreddy_lakkireddy/" target="_blank"><i class="ri-code-s-slash-line"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="ri-code-s-slash-line"></i></a></li>
         </ul>
       </div>
     </div>
@@ -71,8 +68,6 @@
 </div>
 </section>
 <!-- hero section ends -->
-
-
 <!-- about section starts -->
 <section class="about" id="about" >
      
@@ -109,19 +104,16 @@
     </div>
 </section>
 <!-- about section ends -->
-
-
-
 <!-- education section starts -->
 <section class="education" id="education">
 
-  <h1 class="heading"> My  Knowledge Cart <i class="ri-shopping-cart-2-line"></i></h1>
+  <h1 class="heading" onclick="handleClick(event)"> My  Knowledge Cart <i class="ri-shopping-cart-2-line"></i></h1>
 
     <!-- <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p> -->
 
-    <div class="box-container">
+    <div class="box-container" onclick="handleClick(event)">
 
-    <div class="box">
+    <div class="box" onclick="handleClick(event)">
         <div class="image">
         <img draggable="false" src="mgit.jpg" alt="">
         </div>
@@ -157,71 +149,20 @@
 </section>
 <!-- education section ends -->
 
-
-
-
-<!-- contact section starts -->
-<!-- <section class="contact" id="contact">
-  
-  <h2 class="heading">Reach Me</h2>
-
-  <div class="container">
-    <div class="content">
-      
-    <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text"id="nani"  placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="email" id="myemail" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" id="myphone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="myMessage" id="message"  required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section> -->
-<!-- contact section ends -->
-
-
-
-
-
+<div class="cont">
+  <form action="https://api.web3forms.com/submit" method="POST" id="myform" >
+    <h2 onclick="handleClick(event)">Let's Talk <span><i class="ri-kakao-talk-line"></i></span></h2>
+    <input type="hidden" name="access_key" value="eff3653f-4ca1-4982-b641-300d2cb3c27b">
+    <input type="text" name="name" placeholder="enter your name" onclick="handleClick(event)"  required >
+    <input type="email" name="email" placeholder="youremail@gmail.com"  onclick="handleClick(event)" required>
+    <input type="text" name="phoneno" placeholder="phone number"  onclick="handleClick(event)" required >
+    <textarea  name="message" rows="5" placeholder="enter the text you want to send to me" required onclick="handleClick(event)"></textarea>
+    <button type="submit">submit</button>
+  </form>
+</div>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
 <!-- jquery cdn -->
-<!-- gsap cdn -->
-<script>
-  function sendEmail(){
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "lakkireddyruthwikreddy@gmail.com",
-        Password : "Bruser@143",
-        To : 'them@website.com',
-        From : document.getElementById("myemail").value,
-        Subject : "testing email",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-
-  }
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -233,14 +174,7 @@
 <script src="app.js"></script>
 
 
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
-
-
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
 <script src="script.js"></script>
 
 </body>
