@@ -79,7 +79,7 @@ header {
   box-shadow: 0 1px 4px rgba(4, 4, 4, 0.33);
 }
 section {
-  min-height: 100vh;
+  min-height: 100 h;
   padding: 2rem 9%;
 }
 .heading {
@@ -564,6 +564,7 @@ header .navbar ul li a:hover {
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
+  cursor: pointer;
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
@@ -644,6 +645,66 @@ header .navbar ul li a:hover {
     flex-wrap: wrap;
   }
 }
+.cont{
+  height : 100vh;
+  width: 100%;
+  
+  background-color: rgba(150, 190, 228, 0.605);
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+#myform input[type="text"], #myform input[type="email"], #myform input[type="tel"], #myform textarea {
+  font-size: 1.6rem; /* Adjust the font size as desired */
+  text-transform:capitalize;
+}
+form{
+  display: flex;
+  background-color: #2eb2ea;
+  flex-direction: column;
+  margin: 0 30px;
+  width: 90%;
+  padding: 2vw 4vw;
+  max-width: 600px;
+  /* max-height: 60vh; */
+  border-radius: 20px;
+}
+form h2{
+  color: #05386B;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+form h2 span{
+  color: black;
+}
+form input,form textarea{
+  border: 0;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 1.3rem;
+  /* font-size: 1.2rem; */
+  outline: none;
+  font-size: 1.02rem;
+}
+form button{
+  padding: 13px;
+  background-color: #ffae00;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.84);
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width : 100px;
+  margin: 20px auto 0;
+  border-radius: 40px;
+}
+form button:hover{
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
 /* education media queries ends*/
 /* education section ends */
 
