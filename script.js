@@ -97,7 +97,7 @@ form.addEventListener('submit',(event)=>{
     form.reset();
     
     });
-  document.title = "Please come back";
+  
 // <!-- typed js effect ends -->
 
 
