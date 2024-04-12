@@ -78,7 +78,7 @@ document.addEventListener('visibilitychange',
           $("#favicon").attr("href", "assets/images/favicon.png");
       }
       else {
-          document.title = "Dude come back ";
+          document.title = "Please come back";
           $("#favicon").attr("href", "assets/images/favhand.png");
       }
   });
@@ -97,7 +97,7 @@ form.addEventListener('submit',(event)=>{
     form.reset();
     
     });
-  document.title = "Dude come back ";
+  document.title = "Please come back";
 // <!-- typed js effect ends -->
 
 
