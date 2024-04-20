@@ -94,7 +94,7 @@ var typed = new Typed(".typing-text", {
 });
 form.addEventListener('submit',(event)=>{
 
-    form.reset();
+    
     
     });
   
